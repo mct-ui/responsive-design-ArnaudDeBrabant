@@ -57,7 +57,8 @@ html {
         line-height: 1.6;
     }
 }
-
+.color{
+    color: white;
 }
 
 /*
@@ -203,6 +204,15 @@ a:focus {
     padding: 24px 24px 0;
     display: flex;
     flex-direction: column;
+}
+
+.o-row-neutral-x-light{
+    background-color: #F7F7F7;
+}
+
+.o-row—gradient{
+    background: rgb(80,81,219);
+background: linear-gradient(27deg, rgba(80,81,219,1) 30%, rgba(56,135,247,1) 100%);
 }
 
 /* size modifiers */
@@ -365,13 +375,11 @@ a:focus {
     padding: 0;
 }
 
-.o-row-neutral-x-light{
-    background-color: #F7F7F7;
-}
 
-.o-row-neutral-x-blue{
+
+/* .o-row-neutral-x-blue{
     background-color: #5051DB;
-}
+} */
 
 /*
     Utilities: color
@@ -496,12 +504,12 @@ a:focus {
     width: 100%;
     background-color: #7373F5;
     transform: scaleX(.5);
-    transform-origin: right;
+    transform-origin: left;
     transition-property: transform, background-color;
     transition-duration: .175s;
     transition-timing-function: ease;
 }
-.c-link-cta::before {
+/* .c-link-cta::before {
     content: "";
     display: block;
     position: absolute;
@@ -515,7 +523,7 @@ a:focus {
     transition-property: transform, background-color;
     transition-duration: .175s;
     transition-timing-function: ease;
-}
+} */
 
 .c-link-cta:hover {
     color: #3E3EA8;
@@ -529,6 +537,19 @@ a:focus {
     transform: scaleX(1);
     background-color: #3E3EA8;
 }
+.c-link-cta--inverse,
+.c-link-cta--inverse:visited,
+.c-link-cta--inverse:active{
+    color: #fff;
+}
+.c-link-cta--inverse::after{
+    background-color: #fff;
+
+}
+.c-link-cta--inverse:hover::after{
+    background-color: #fff;
+}
+
 
 /*
     Objects: section
