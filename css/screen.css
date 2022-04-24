@@ -472,6 +472,65 @@ background: linear-gradient(27deg, rgba(80,81,219,1) 30%, rgba(56,135,247,1) 100
         line-height: 72px;
     }
 }
+/*
+    Component: figure
+    ---
+    Special type of figure and figcaption
+*/
+
+.c-figure {
+    position: relative;
+}
+
+.c-figure__caption {
+    line-height: 15px;
+    margin-top: 8px;
+    padding-left: 6px;
+    padding-top: 1px;
+    border: 2px solid #5051DB;
+    border-width: 0 0 0 2px;
+}
+
+@media (min-width: 768px) {
+    .c-figure__caption--absolute {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 8px;
+        text-align: right;
+        background-color: #fff;
+        padding: 16px;
+        max-width: 260px;
+        border-width: 0 4px 0 0;
+    }
+}
+/*
+    Component: Title icon
+    ---
+    Special type of title with icon
+*/
+
+.c-title-icon {
+    display: flex;
+    align-items: flex-start;
+}
+
+.c-title-icon__icon {
+    height: 70px;
+    margin-right: 20px;
+}
+
+@media (min-width: 768px) {
+    .c-title-icon__icon {
+        height: 84px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .c-title-icon__icon {
+        height: 112px;
+    }
+}
 
 .c-link-cta {
     position: relative;
@@ -663,6 +722,7 @@ background: linear-gradient(27deg, rgba(80,81,219,1) 30%, rgba(56,135,247,1) 100
     }
 }
 
+
 /*
     Component: header
     ---
@@ -684,7 +744,68 @@ background: linear-gradient(27deg, rgba(80,81,219,1) 30%, rgba(56,135,247,1) 100
     }
 }
 
+/*
+    Component: footer
+    ---
+    Main footer of the website
+*/
 
+.c-footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.c-footer__logo {
+    width: 100%;
+}
+
+.c-footer__nav {
+    width: 50%;
+}
+
+.c-footer__link {
+    display: block;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 8px 0;
+}
+
+@media (min-width: 768px) {
+    .c-footer {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .c-footer__logo {
+        display: flex;
+        justify-content: center;
+        padding: 0 12px;
+    }
+
+    .c-footer__nav {
+        width: auto;
+        padding: 0 16px;
+    }
+}
+
+@media (min-width: 992px) {
+    .c-footer {
+        justify-content: space-between;
+    }
+
+    .c-footer__nav {
+        padding: 0;
+    }
+
+    .c-footer__logo + .c-footer__nav {
+        order: -1;
+    }
+
+    .c-footer__logo {
+        width: auto;
+    }
+
+}
 
 
 /*------------------------------------*\
